@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vital Strength Foundation | Mental health care, nursing scholarships, child and elder support</title>
+<meta name="description" content="Vital Strength Foundation subsidizes mental health care in Virginia, funds scholarships for Nigerian nursing students, and supports underprivileged children and the aged.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#10263a; --sea:#1d7568; --sea-dark:#145a50; --sun:#e9a93a; --mist:#eaf1f1; --paper:#fbfcfc; --text:#25384a; --line:#cfdcdc;
+  --serif:"Fraunces",Georgia,serif; --sans:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{font-family:var(--sans);color:var(--text);background:var(--paper);line-height:1.65;font-size:1.0625rem}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.5rem}
+h1,h2,h3{font-family:var(--serif);color:var(--ink);line-height:1.15;font-weight:700}
+
+/* header */
+header{background:var(--ink);color:#fff}
+header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.75rem 2rem;padding-top:1rem;padding-bottom:1rem}
+.brand{font-family:var(--serif);font-weight:700;font-size:1.2rem;text-decoration:none;display:flex;align-items:center;gap:.6rem}
+.mark{width:2rem;height:2rem}
+nav{display:flex;flex-wrap:wrap;gap:.25rem 1.5rem;font-size:.95rem}
+nav a{text-decoration:none;opacity:.85;padding:.25rem 0}
+nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:4px}
+
+/* hero */
+.hero{background:var(--ink);color:#fff;padding:4.5rem 0 5.5rem;position:relative;overflow:hidden}
+.hero .wrap{position:relative}
+.hero h1{color:#fff;font-size:clamp(2.2rem,5.6vw,4rem);max-width:15ch;animation:rise .9s ease both}
+.hero p{max-width:52ch;margin-top:1.5rem;font-size:1.2rem;color:#d3e0e3;animation:rise .9s .15s ease both}
+.cta{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2.25rem;animation:rise .9s .3s ease both}
+.btn{display:inline-block;padding:.85rem 1.6rem;border-radius:.4rem;font-weight:600;text-decoration:none;border:2px solid var(--sun);transition:background .2s,color .2s}
+.btn.primary{background:var(--sun);color:var(--ink)}
+.btn.primary:hover{background:#f3bd57}
+.btn.ghost{color:#fff;border-color:#6f8896}
+.btn.ghost:hover{border-color:#fff}
+.arc{position:absolute;right:-120px;top:-60px;width:520px;max-width:70vw;opacity:.9;pointer-events:none}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* sections */
+section{padding:4.5rem 0}
+.intro{max-width:62ch}
+.intro h2,.heading h2{font-size:clamp(1.7rem,3.4vw,2.4rem)}
+.intro p{margin-top:1.1rem}
+.standing{display:inline-block;margin-top:1.5rem;padding:.5rem .9rem;border-left:4px solid var(--sea);background:var(--mist);font-size:.95rem}
+
+.programs{background:var(--mist)}
+.heading{margin-bottom:2.5rem;max-width:56ch}
+.heading p{margin-top:.8rem}
+.row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:1rem 3rem;padding:2.25rem 0;border-top:1px solid var(--line)}
+.row:last-child{border-bottom:1px solid var(--line)}
+.row h3{font-size:1.5rem}
+.row h3 span{display:block;margin-top:.5rem;font-family:var(--sans);font-size:.95rem;font-weight:600;color:var(--sea-dark)}
+.row ul{margin:.9rem 0 0 1.1rem}
+.row li{margin-top:.35rem}
+.row li::marker{color:var(--sea)}
+
+.who{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2.5rem}
+.who h3{font-size:1.25rem;margin-bottom:.5rem}
+
+.support{background:var(--sea-dark);color:#e3f0ee}
+.support h2{color:#fff}
+.support .grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:3rem;align-items:start}
+.support p{margin-top:1rem;max-width:56ch}
+.ways{list-style:none}
+.ways li{padding:1rem 0;border-top:1px solid #4b8e83}
+.ways li:last-child{border-bottom:1px solid #4b8e83}
+.ways strong{color:#fff;display:block}
+
+footer{background:var(--ink);color:#b9c9cf;padding:3rem 0 2rem;font-size:.92rem}
+footer .cols{display:flex;flex-wrap:wrap;gap:2rem 4rem;justify-content:space-between}
+footer h4{font-family:var(--serif);color:#fff;font-size:1.05rem;margin-bottom:.5rem}
+footer a{color:#fff}
+footer .legal{margin-top:2rem;padding-top:1.25rem;border-top:1px solid #29435a}
+
+@media (max-width:760px){
+  .row,.support .grid{grid-template-columns:1fr}
+  section{padding:3.25rem 0}
+  .hero{padding:3rem 0 4rem}
+  .arc{opacity:.35}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top" id="top">
+      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="none" stroke="#e9a93a" stroke-width="2"/><path d="M20 31V16M20 16c0-5 3.5-8 8-8 0 5-3 8-8 8zM20 22c0-4-3-6.500-7-6.500 0 4 2.500 6.500 7 6.500z" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Vital Strength Foundation
+    </a>
+    <nav aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="get-involved.html">Get involved</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <svg class="arc" viewBox="0 0 400 400" aria-hidden="true"><g fill="none" stroke="#1d7568" stroke-width="2"><circle cx="300" cy="140" r="60"/><circle cx="300" cy="140" r="110"/><circle cx="300" cy="140" r="160"/><circle cx="300" cy="140" r="210"/></g><circle cx="300" cy="140" r="14" fill="#e9a93a"/></svg>
+  <div class="wrap">
+    <h1>Strength for every stage of life.</h1>
+    <p>We pay part of the cost of mental health care in Virginia, fund Nigerian nursing students who earn their place, and stand with children and older people who have too little.</p>
+    <div class="cta">
+      <a class="btn primary" href="get-involved.html">Support our work</a>
+      <a class="btn ghost" href="programs.html">See our programs</a>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="intro">
+      <h2>A small foundation with a clear job</h2>
+      <p>Vital Strength Foundation is a nonprofit corporation incorporated in the Commonwealth of Virginia. We believe good care should not depend on what a person can afford, where they were born, or how old they are.</p>
+      <p>Our work runs on three commitments: make mental health care affordable, train the nurses who will deliver care, and protect the people at both ends of life, the young and the aged.</p>
+      <p class="standing">Incorporated March 18, 2026. In good standing with the Virginia State Corporation Commission.</p>
+    </div>
+  </div>
+</section>
+
+<section class="programs" id="programs">
+  <div class="wrap">
+    <div class="heading">
+      <h2>What we fund</h2>
+      <p>Four programs, each with a specific group of people in mind.</p>
+    </div>
+
+    <article class="row">
+      <h3>Mental health care subsidies<span>Virginia, USA</span></h3>
+      <div>
+        <p>Therapy and psychiatric care can cost more than a household can carry. We subsidize part of that cost so people in Virginia can start treatment and stay in it.</p>
+        <ul>
+          <li>Help with the cost of counseling and psychiatric visits</li>
+          <li>Open to Virginia residents who cannot afford full fees</li>
+          <li>Paid directly to the care provider</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="row">
+      <h3>Nursing scholarships<span>Nigeria</span></h3>
+      <div>
+        <p>Nigeria needs more well-trained nurses. We give scholarships to nursing students who have shown strong academic results and need financial help to finish their training.</p>
+        <ul>
+          <li>Awarded on academic merit</li>
+          <li>For students enrolled in nursing programs in Nigeria</li>
+          <li>Applications reviewed by the Foundation's scholarship committee</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="row">
+      <h3>Support for underprivileged children<span>Children</span></h3>
+      <div>
+        <p>A child's start in life should not be limited by their family's income. We support children from low-income homes with the essentials that keep them healthy, in school, and cared for.</p>
+      </div>
+    </article>
+
+    <article class="row">
+      <h3>Support for the aged<span>Older adults</span></h3>
+      <div>
+        <p>Older people often carry the heaviest costs with the least income. We help the aged live with dignity, with attention to their health, comfort, and companionship.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="who">
+      <div>
+        <h3>If you need care</h3>
+        <p>Virginia residents seeking affordable mental health care can contact us to ask about subsidy support.</p>
+      </div>
+      <div>
+        <h3>If you are a nursing student</h3>
+        <p>Nigerian nursing students with strong grades can ask us for scholarship requirements and deadlines.</p>
+      </div>
+      <div>
+        <h3>If you want to help</h3>
+        <p>Donors, volunteers, and partner organizations make every program possible. See how to get involved below.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="support" id="support">
+  <div class="wrap grid">
+    <div>
+      <h2>Help us reach more people</h2>
+      <p>Every contribution goes toward care, tuition, and support for people who would otherwise go without. Choose the way that suits you.</p>
+      <div class="cta" style="animation:none">
+        <a class="btn primary" href="mailto:info@vitalstrengthfoundation.org?subject=Donation%20enquiry">Make a donation</a>
+      </div>
+    </div>
+    <ul class="ways">
+      <li><strong>Donate</strong>Give once or monthly to any program.</li>
+      <li><strong>Volunteer</strong>Offer your time and professional skills.</li>
+      <li><strong>Partner</strong>Work with us as a clinic, school, church, or company.</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Vital Strength Foundation</h4>
+        <p>A nonprofit corporation of the<br>Commonwealth of Virginia, USA</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="mailto:info@vitalstrengthfoundation.org">info@vitalstrengthfoundation.org</a><br>Virginia, USA</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <p><a href="about.html">About</a><br><a href="programs.html">Programs</a><br><a href="get-involved.html">Get involved</a></p>
+      </div>
+    </div>
+    <p class="legal">&copy; <span id="yr">2026</span> Vital Strength Foundation. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
